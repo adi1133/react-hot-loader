@@ -60,7 +60,7 @@ function runAllTests(useWeakMap) {
 
       const dynamic = () => () => <div>123</div>
 
-      const spy = jest.spyOn(console, 'error').mockImplementation(() => {})
+      const spy = jest.spyOn(console, 'warn').mockImplementation(() => {})
 
       try {
         RHL.register(f1, 'f1', '/wow/test.js')
